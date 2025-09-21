@@ -1,14 +1,27 @@
+"use client"
 import React from "react";
 import { Search, Menu, CircleChevronRight, User } from "lucide-react";
 import Image from "next/image";
 import { Logo } from "@/public/constants";
+import Sidebar from "./Sidebar";
+import gsap from "gsap";
 
 const Navbar = () => {
+
+  const toggleSidebar = () => {
+    gsap.to('#sidebar' , { left: 0 , duration : 0.5 } )
+  }
+
+  const closeSidebar = () => {
+    gsap.to("#sidebar", { left: "-100%", duration: 0.5 });
+  };
+
+
   return (
     <>
-      <div className="nav__bar relative grid grid-cols-1 justify-center items-center mt-5 gap-5 md:grid md:grid-cols-3 md:w-full ">
+      <div className="nav__bar relative grid grid-cols-1 justify-center items-center pt-5 gap-5 md:grid md:grid-cols-3 md:w-full ">
         <div className="nav__navigation flex justify-around items-center gap-12">
-          <div className="nav__menu cursor-pointer md:hidden">
+          <div id="menu" onClick={toggleSidebar} className="nav__menu cursor-pointer md:hidden">
             <Menu size={27} style={{ fontWeight: "12px" }} />
           </div>
           <div className="nav__logo">
@@ -49,6 +62,12 @@ const Navbar = () => {
               <Search size={20} />
             </button>
           </form>
+        </div>
+       {/* Sidebar */}
+
+        <div className="fixed top-0 -left-[100%] w-2/3 max-w-sm h-screen bg-white z-40 shadow-lg"
+          id="sidebar">
+          <Sidebar onClick={closeSidebar} className="h-full" />
         </div>
       </div>
       <div className="mt-4 nav__secondbar hidden md:block bg-secondary w-full h-14">

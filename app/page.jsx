@@ -1,5 +1,7 @@
 "use client";
 import Home_bottom_navigation from "@/components/Home_bottom_navigation";
+import Sidebar from "@/components/Sidebar";
+import { Logo } from "../public/constants";
 import Image from "next/image";
 import {
   ShareeCollectionPic,
@@ -48,12 +50,17 @@ export default function Home() {
       img: EidCollectionPic,
     },
   ];
-  
+
   return (
     <>
       {/* banner_section */}
+
+      
       <div className="mt-4 md:mt-0 banner_section w-full h-[250px] md:h-[530px] bg-gray-100 grid grid-cols-1 md:grid-cols-12 px-4 py-3 gap-4">
+
         {/* banner__navigation */}
+
+
         <div className="banner__navigation hidden md:block col-span-4 bg-white h-fit w-full rounded-md lg:grid lg:w-3/5 lg:translate-x-[6rem]">
           <ul className="banner__navigation__title">
             {bannerNavigationTitle.map((item) => {
@@ -77,13 +84,18 @@ export default function Home() {
             })}
           </ul>
         </div>
+        
         {/* banner__slider */}
 
         <div className="banner__slider col-span-8 lg:col-span-7 bg-white md:h-[470px] rounded-md">
-          <SwiperBannerSlider/>
+          <SwiperBannerSlider />
         </div>
       </div>
-      <Home_bottom_navigation />
+
+      {/* bottom__navigation */}
+
+
+      <Home_bottom_navigation className={`z-[999]`} />
     </>
   );
 }
