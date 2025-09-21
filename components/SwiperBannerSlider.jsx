@@ -37,7 +37,7 @@ const SwiperBannerSlider = ({ className }) => {
               src={slide.img}
               alt={`slider-${slide.id}`}
               fill
-              className="object-cover rounded-md"
+              className=" rounded-md"
             />
           </div>
         </SwiperSlide>
