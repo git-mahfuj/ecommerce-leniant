@@ -1,5 +1,5 @@
 "use client";
-
+import Home_bottom_navigation from "@/components/Home_bottom_navigation";
 import Image from "next/image";
 import {
   ShareeCollectionPic,
@@ -83,6 +83,7 @@ export default function Home() {
           <SwiperBannerSlider/>
         </div>
       </div>
+      <Home_bottom_navigation />
     </>
   );
 }
