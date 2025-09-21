@@ -57,7 +57,7 @@ const Sidebar = ({ id, className , onClick }) => {
       {/* Logo */}
       <div className="side__logo flex justify-around items-center gap-18 border-b border-gray-200 pt-3 pb-4">
         <Image src={Logo} />
-        <div onClick={closeSidebar} id="close-button">
+        <div onClick={closeSidebar} id="close-button" className="px-4">
           <X
             size={32}
             className="hover:text-secondary transition-all duration-300 cursor-pointer"

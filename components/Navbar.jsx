@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <>
       <div className="nav__bar relative grid grid-cols-1 justify-center items-center pt-5 gap-5 md:grid md:grid-cols-3 md:w-full ">
-        <div className="nav__navigation flex justify-around items-center gap-12">
+        <div className="nav__navigation flex justify-around items-center gap-12 px-5">
           <div id="menu" onClick={toggleSidebar} className="nav__menu cursor-pointer md:hidden">
             <Menu size={27} style={{ fontWeight: "12px" }} />
           </div>
