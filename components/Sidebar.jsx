@@ -56,7 +56,7 @@ const Sidebar = ({ id, className , onClick }) => {
     <div id={`${id}`} className={`${className} h-full flex flex-col`}>
       {/* Logo */}
       <div className="side__logo flex justify-around items-center gap-18 border-b border-gray-200 pt-3 pb-4">
-        <Image src={Logo} />
+        <Image src={Logo} alt="logo" />
         <div onClick={closeSidebar} id="close-button" className="px-4">
           <X
             size={32}

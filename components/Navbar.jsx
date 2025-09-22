@@ -56,7 +56,7 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search for products..."
-              className="w-full border border-black md:border-secondary px-3 py-1.5 placeholder:text-gray-500 placeholder:font-normal rounded-md"
+              className="w-full border border-black focus:outline-black md:border-secondary px-3 py-1.5 placeholder:text-gray-500 placeholder:font-normal lg:focus:outline-secondary rounded-md"
             />
             <button className="bg-black md:bg-secondary text-white px-4 rounded-r-md  py-2 absolute top-0 right-0 h-full flex items-center justify-center cursor-pointer">
               <Search size={20} />
