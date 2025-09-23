@@ -61,7 +61,7 @@ const SwiperPopularSlider = () => {
         {popularSlider.map((slide) => (
           <SwiperSlide key={slide.id}>
             {/* container must be relative and have an explicit height so Image with fill can work */}
-            <div className="relative w-full lg:w-[90%] xl:w-[70%] h-53 md:h-48 lg:h-56 rounded-xl overflow-hidden border-4 border-secondary">
+            <div className="relative w-full lg:w-[90%] h-53 md:h-48 lg:h-56 rounded-xl overflow-hidden border-4 border-secondary">
               <Image
                 src={slide.img}
                 alt={`slider-${slide.id}`}

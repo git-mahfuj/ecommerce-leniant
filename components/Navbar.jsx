@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useEffect } from "react";
 import { Search, Menu, CircleChevronRight, User } from "lucide-react";
 import Image from "next/image";
 import { Logo } from "@/public/constants";
@@ -16,9 +16,8 @@ const Navbar = () => {
     gsap.to("#sidebar", { left: "-100%", duration: 0.5 });
   };
 
-
   return (
-    <>
+    <div id="nav-bar" className="h-36 bg-white z-10 fixed w-full top-0 ">
       <div className="nav__bar relative grid grid-cols-1 justify-center items-center pt-5 gap-5 md:grid md:grid-cols-3 md:w-full ">
         <div className="nav__navigation flex justify-around items-center gap-12 px-5">
           <div id="menu" onClick={toggleSidebar} className="nav__menu cursor-pointer md:hidden">
@@ -97,7 +96,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

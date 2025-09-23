@@ -17,4 +17,22 @@ import PopularCategoriesFour from "./images/1746863483-brown-modern-minimalist-b
 import PopularCategoriesFive from "./images/1746862865-brown-modern-minimalist-bag-new-collection-instagram-post-(1).webp"
 import PopularCategoriesSix from "./images/1746864358-brown-modern-minimalist-bag-new-collection-instagram-post-(5).webp"
 
-export { Logo , ShareeCollectionPic, SalowarKameezPic, StylishScarfPic, FasionableShalPic, WesterSetPic, EidCollectionPic , SliderImgOne , SliderImgTwo , PopularCategoriesOne , PopularCategoriesTwo , PopularCategoriesThree , PopularCategoriesFour , PopularCategoriesFive , PopularCategoriesSix};
+import TrendingProductsOne from "./images/IMG-20250916-WA0001.jpg"
+import TrendingProductstwo from "./images/IMG-20250916-WA0002.jpg"
+import TrendingProductsthree from "./images/IMG-20250916-WA0003.jpg"
+import TrendingProductsfour from "./images/IMG-20250916-WA0004.jpg"
+import TrendingProductsfive from "./images/IMG-20250916-WA0005.jpg"
+import TrendingProductssix from "./images/IMG-20250916-WA0006.jpg"
+import TrendingProductsseven from "./images/IMG-20250916-WA0007.jpg"
+import TrendingProductseight from "./images/IMG-20250916-WA0008.jpg"
+import TrendingProductsnine from "./images/IMG-20250916-WA0009.jpg"
+import TrendingProductsten from "./images/IMG-20250916-WA0010.jpg"
+import TrendingProductseleven from "./images/IMG-20250916-WA0011.jpg"
+import TrendingProductstwelve from "./images/IMG-20250916-WA0012.jpg"
+import TrendingProductsthirteen from "./images/IMG-20250916-WA0013.jpg"
+import TrendingProductsFourteen from "./images/IMG-20250916-WA0014.jpg"
+import TrendingProductsfifteen from "./images/IMG-20250916-WA0015.jpg"
+import TrendingProductssixTeen from "./images/IMG-20250916-WA0016.jpg"
+import TrendingProductsseventeen from "./images/IMG-20250916-WA0017.jpg"
+
+export { Logo, ShareeCollectionPic, SalowarKameezPic, StylishScarfPic, FasionableShalPic, WesterSetPic, EidCollectionPic, SliderImgOne, SliderImgTwo, PopularCategoriesOne, PopularCategoriesTwo, PopularCategoriesThree, PopularCategoriesFour, PopularCategoriesFive, PopularCategoriesSix, TrendingProductsOne, TrendingProductseight, TrendingProductsFourteen, TrendingProductseleven, TrendingProductsfifteen, TrendingProductsfive, TrendingProductsfour, TrendingProductsnine, TrendingProductsseven, TrendingProductsseventeen, TrendingProductssix, TrendingProductssixTeen, TrendingProductsten, TrendingProductsthirteen, TrendingProductsthree, TrendingProductstwo, TrendingProductstwelve };

@@ -3,7 +3,7 @@ import { Menu, MessageCircle, ShoppingCart , User , House } from "lucide-react";
 
 const Home_bottom_navigation = ({className}) => {
   return (
-    <div className={`${className} fixed bottom-0 w-full h-18 border-t border-gray-200 grid grid-cols-12 justify-center items-center md:hidden z-50`}>
+    <div className={`${className} fixed bottom-0 w-full h-18 border-t border-gray-200 grid grid-cols-12 justify-center items-center md:hidden z-50 bg-white`}>
       <div className="bottom__navigation col-span-3 px-2">
         <div className="bottom_navigation_icons flex flex-col items-center">
             <Menu size={17} />
