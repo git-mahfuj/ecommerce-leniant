@@ -39,7 +39,7 @@ const Footer = () => {
               <p className="py-2 border-b-2 border-secondary text-center text-xl">
                 Stay with us in facebook
               </p>
-              <div className="relative mt-2 w-[240px]">
+              <div className="footer__facebook relative mt-2 w-[240px]">
                 <Image
                   src={facebookLeinant}
                   alt="haker"
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full h-[100px] bg-black text-gray-500 mt-3 md:text-center md:h-[50px] md:mt-33">
+        <div className="footer__copy w-full h-[100px] bg-black text-gray-500 mt-3 md:text-center md:h-[50px] md:mt-33">
           <p className="text-sm px-4 py-1 md:text-xl">
             © {year} Leniant. All rights reserved. Design &amp; Developed By Mahfujur Rahman
           </p>

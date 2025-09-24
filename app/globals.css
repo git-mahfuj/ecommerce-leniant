@@ -12,3 +12,9 @@
         --color-secondary: #de236e;
         --color-footerBackground : #212529;
 }
+
+@media screen and (max-width:460px) {
+  .footer__facebook {
+    width : 200px;
+  }
+}
