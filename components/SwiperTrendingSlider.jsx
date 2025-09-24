@@ -176,6 +176,7 @@ const SwiperTrendingSlider = () => {
                   className="object-contain group-hover:scale-105 transition-all duration-700"
                 />
               </div>
+              <div className="absolute top-1 right-1 px-2.5 py-3 bg-secondary rounded-full text-white text-sm">{slide.sale}</div>
 
               <p className="">{slide.des}</p>
               <span className="flex items-center gap-3">

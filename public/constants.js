@@ -35,4 +35,22 @@ import TrendingProductsfifteen from "./images/IMG-20250916-WA0015.jpg"
 import TrendingProductssixTeen from "./images/IMG-20250916-WA0016.jpg"
 import TrendingProductsseventeen from "./images/IMG-20250916-WA0017.jpg"
 
-export { Logo, ShareeCollectionPic, SalowarKameezPic, StylishScarfPic, FasionableShalPic, WesterSetPic, EidCollectionPic, SliderImgOne, SliderImgTwo, PopularCategoriesOne, PopularCategoriesTwo, PopularCategoriesThree, PopularCategoriesFour, PopularCategoriesFive, PopularCategoriesSix, TrendingProductsOne, TrendingProductseight, TrendingProductsFourteen, TrendingProductseleven, TrendingProductsfifteen, TrendingProductsfive, TrendingProductsfour, TrendingProductsnine, TrendingProductsseven, TrendingProductsseventeen, TrendingProductssix, TrendingProductssixTeen, TrendingProductsten, TrendingProductsthirteen, TrendingProductsthree, TrendingProductstwo, TrendingProductstwelve };
+import EidCollectionOne from "./images/IMG-20250916-WA0026.jpg"
+import EidCollectionTwo from "./images/IMG-20250916-WA0027.jpg"
+import EidCollectionThree from "./images/IMG-20250916-WA0028.jpg"
+import EidCollectionFour from "./images/IMG-20250916-WA0029.jpg"
+import EidCollectionFive from "./images/IMG-20250916-WA0030.jpg"
+import EidCollectionSix from "./images/IMG-20250916-WA0031.jpg"
+import EidCollectionSeven from "./images/IMG-20250916-WA0032.jpg"
+import EidCollectionEight from "./images/IMG-20250916-WA0033.jpg"
+import EidCollectionNine from "./images/IMG-20250916-WA0034.jpg"
+import EidCollectionTen from "./images/IMG-20250916-WA0035.jpg"
+
+import backgroundLogo from "./images/1746697668-leniant-final-logo-(1).webp"
+import facebookLeinant from "./images/503668841_732030956263172_1645728552375802874_n.jpg"
+import Leinant from "./images/322879103_1609667289449423_6317087759908600227_n.jpg"
+
+export {
+    Logo, ShareeCollectionPic, SalowarKameezPic, StylishScarfPic, FasionableShalPic, WesterSetPic, EidCollectionPic, SliderImgOne, SliderImgTwo, PopularCategoriesOne, PopularCategoriesTwo, PopularCategoriesThree, PopularCategoriesFour, PopularCategoriesFive, PopularCategoriesSix, TrendingProductsOne, TrendingProductseight, TrendingProductsFourteen, TrendingProductseleven, TrendingProductsfifteen, TrendingProductsfive, TrendingProductsfour, TrendingProductsnine, TrendingProductsseven, TrendingProductsseventeen, TrendingProductssix, TrendingProductssixTeen, TrendingProductsten, TrendingProductsthirteen, TrendingProductsthree, TrendingProductstwo, TrendingProductstwelve, EidCollectionOne, EidCollectionEight, EidCollectionFive, EidCollectionFour, EidCollectionNine, EidCollectionSeven, EidCollectionSix, EidCollectionTen, EidCollectionThree, EidCollectionTwo , backgroundLogo , facebookLeinant , Leinant
+
+};

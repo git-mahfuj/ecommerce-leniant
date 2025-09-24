@@ -5,8 +5,10 @@
 :root {
     --primary-color: white;
     --secondary-color: #de236e;
+    --footer-color : #212529:
 }
 
 @theme {
-    --color-secondary: #de236e;
+        --color-secondary: #de236e;
+        --color-footerBackground : #212529;
 }
