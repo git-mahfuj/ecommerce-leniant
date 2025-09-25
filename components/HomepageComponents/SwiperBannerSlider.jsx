@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 import "swiper/css";
-import { SliderImgOne, SliderImgTwo } from "../public/constants";
+import { SliderImgOne, SliderImgTwo } from "../../public/constants";
 import Image from "next/image";
 
 const SwiperBannerSlider = ({ className }) => {

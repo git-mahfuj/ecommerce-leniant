@@ -12,7 +12,7 @@ import {
   EidCollectionPic,
   SliderImgOne,
   SliderImgTwo,
-} from "../public/constants";
+} from "../../public/constants";
 
 import gsap from "gsap";
 

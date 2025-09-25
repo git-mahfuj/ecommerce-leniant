@@ -1,33 +1,64 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { Search, Menu, CircleChevronRight, User } from "lucide-react";
 import Image from "next/image";
 import { Logo } from "@/public/constants";
-import Sidebar from "./Sidebar";
+import Sidebar from "./HomepageComponents/Sidebar";
 import gsap from "gsap";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
-
   const toggleSidebar = () => {
-    gsap.to('#sidebar' , { left: 0 , duration : 0.5 } )
-  }
+    gsap.to("#sidebar", { left: 0, duration: 0.5 });
+  };
 
   const closeSidebar = () => {
     gsap.to("#sidebar", { left: "-100%", duration: 0.5 });
+  };
+
+  const router = useRouter();
+
+  const togglerTrackOrderPage = () => {
+    router.push("/TrackOrder");
+  };
+  const toggleHomePage = () => {
+    router.push("/");
+  };
+  const toggleLoginPage = () => {
+    router.push("/Login");
+  };
+
+  const toggleSignUpPage = () => {
+    router.push("/Signup");
+  };
+
+  const toggleContactPage = () => {
+    router.push("/Contact");
+  };
+
+  const toggleCartPage = () => {
+    router.push("/Cart");
   };
 
   return (
     <div id="nav-bar" className="h-36 bg-white z-10 fixed w-full top-0 ">
       <div className="nav__bar relative grid grid-cols-1 justify-center items-center pt-5 gap-5 md:grid md:grid-cols-3 md:w-full ">
         <div className="nav__navigation flex justify-around items-center gap-12 px-5">
-          <div id="menu" onClick={toggleSidebar} className="nav__menu cursor-pointer md:hidden">
+          <div
+            id="menu"
+            onClick={toggleSidebar}
+            className="nav__menu cursor-pointer md:hidden"
+          >
             <Menu size={27} style={{ fontWeight: "12px" }} />
           </div>
           <div className="nav__logo">
             <Image src={Logo} alt="logo" width={180} className="md:w-[230px]" />
           </div>
           <div className="nav__icons cursor-pointer md:absolute md:right-24 lg:right-34 md:top-1/2 md:-translate-y-1/2 md:translate-x-6 md:z-0 md:transform md:flex md:gap-6">
-            <div className="lord__truck hidden md:block ">
+            <div
+              className="lord__truck hidden md:block "
+              onClick={togglerTrackOrderPage}
+            >
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
               <lord-icon
                 src="https://cdn.lordicon.com/pkyxcgiq.json"
@@ -36,7 +67,7 @@ const Navbar = () => {
                 style={{ width: "30px", height: "30px" }}
               ></lord-icon>
             </div>
-            <div className="lord__cart">
+            <div className="lord__cart" onClick={toggleCartPage}>
               <script src="https://cdn.lordicon.com/lordicon.js"></script>
               <lord-icon
                 src="https://cdn.lordicon.com/pmawqxvu.json"
@@ -62,10 +93,12 @@ const Navbar = () => {
             </button>
           </form>
         </div>
-       {/* Sidebar */}
+        {/* Sidebar */}
 
-        <div className="fixed top-0 -left-[100%] w-2/3 max-w-sm h-screen bg-white z-40 shadow-lg"
-          id="sidebar">
+        <div
+          className="fixed top-0 -left-[100%] w-2/3 max-w-sm h-screen bg-white z-40 shadow-lg"
+          id="sidebar"
+        >
           <Sidebar onClick={closeSidebar} className="h-full" />
         </div>
       </div>
@@ -78,19 +111,27 @@ const Navbar = () => {
             <button className="flex items-center gap-14">
               <CircleChevronRight />
               <div className="hidden lg:flex lg:gap-4 text-center text-xl">
-                <p className="cursor-pointer">Home</p>
+                <p className="cursor-pointer" onClick={toggleHomePage}>
+                  Home
+                </p>
                 <p className="cursor-pointer">Shop</p>
               </div>
             </button>
           </div>
           <div className="flex items-center gap-9 col-span-4">
-            <p className="text-xl">Contact Us</p>
+            <p className="text-xl cursor-pointer" onClick={toggleContactPage}>
+              Contact Us
+            </p>
             <div className="flex items-center gap-1">
               <User />
               <div className="flex gap-2 items-center text-xl">
-                <p className="cursor-pointer">Login</p>
+                <p className="cursor-pointer" onClick={toggleLoginPage}>
+                  Login
+                </p>
                 <p>/</p>
-                <p className="cursor-pointer">Sign Up</p>
+                <p className="cursor-pointer" onClick={toggleSignUpPage}>
+                  Sign Up
+                </p>
               </div>
             </div>
           </div>

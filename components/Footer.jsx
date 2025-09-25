@@ -7,7 +7,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="mt-3 bg-footerBackground h-[630px] md:h-[400px] w-full text-white relative">
+      <div className=" bg-footerBackground h-[630px] md:h-[400px] w-full text-white relative">
         <div className=" md:grid md:grid-cols-12 md:items-center">
           <div className="footer__logo flex flex-col justify-center items-center text-white gap-1 pt-3 md:col-span-4">
             <Image src={backgroundLogo} alt="background" width={130} />

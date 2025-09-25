@@ -1,6 +1,6 @@
 "use client";
-import Home_bottom_navigation from "@/components/Home_bottom_navigation";
-import Sidebar from "@/components/Sidebar";
+import Home_bottom_navigation from "@/components/HomepageComponents/Home_bottom_navigation";
+import Sidebar from "@/components/HomepageComponents/Sidebar";
 import { Logo } from "../public/constants";
 import Image from "next/image";
 import {
@@ -32,10 +32,10 @@ import {
 } from "@/public/constants";
 
 import "swiper/css";
-import SwiperBannerSlider from "@/components/SwiperBannerSlider";
+import SwiperBannerSlider from "@/components/HomepageComponents/SwiperBannerSlider";
 import gsap from "gsap";
-import SwiperPopularSlider from "@/components/SwiperPopularSlider";
-import SwiperTrendingSlider from "@/components/SwiperTrendingSlider";
+import SwiperPopularSlider from "@/components/HomepageComponents/SwiperPopularSlider";
+import SwiperTrendingSlider from "@/components/HomepageComponents/SwiperTrendingSlider";
 
 export default function Home() {
   const bannerNavigationTitle = [
@@ -266,7 +266,7 @@ export default function Home() {
   ]
 
   return (
-    <div id="home" className="bg-gray-100 mt-36" onClick={closeSidebar}>
+    <div id="home" className="bg-gray-100 mt-39" onClick={closeSidebar}>
       {/* banner_section */}
 
       <div className="mt-4 md:mt-0 banner_section w-full h-[250px] md:h-[530px] bg-gray-100 grid grid-cols-1 md:grid-cols-12 px-4 py-3 gap-4">
