@@ -4,7 +4,7 @@ import Home_bottom_navigation from "@/components/HomepageComponents/Home_bottom_
 const Cartpage = () => {
   return (
     <div
-      className="mt-30 h-[1200px] bg-gray-200 grid grid-cols-1
+      className="cart__page mt-30 h-[1200px] bg-gray-200 grid grid-cols-1
      justify-center items-center gap-0 px-3 md:grid md:grid-cols-1 md:justify-baseline md:items-center md:w-full lg:gird lg:grid-cols-2 lg:gap-14 lg:px-18 xl:px-56 lg:h-[700px]"
     >
       <div className="rounded-lg LoginPage h-[420px] w-full bg-white">
@@ -67,7 +67,7 @@ const Cartpage = () => {
           </div>
         </div>
       </div>
-      <div className=" rounded-lg Page h-[580px] w-full bg-white">
+      <div className="cart__order rounded-lg Page h-[580px] w-full bg-white">
         <form action="">
           <div className="customerLogin w-full border-b border-gray-300 p-4">
             <p className="text-xl font-medium">To confirm your order, please fill in the required information and click the "Place Order" button. To order by phone, click on this number: +88 09636815095.</p>

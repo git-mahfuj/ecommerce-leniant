@@ -17,4 +17,10 @@
   .footer__facebook {
     width : 200px;
   }
+  .cart__page {
+    height: 1300px;
+  }
+  .cart__order {
+    height: 620px;
+  }
 }
